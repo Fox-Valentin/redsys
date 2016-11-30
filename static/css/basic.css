@@ -1,0 +1,125 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,header,hgroup,nav,section,article,aside,footer,figure,figcaption,menu,button {
+    margin: 0;
+    padding: 0
+}
+html{
+
+        height: 100%;
+}
+body {
+    font-family: "Microsoft YaHei","å¾®è½¯é›…é»‘",SimSun,"å®‹ä½“";
+    line-height: 1.5;
+    font-size: 16px;
+    color: #353535;
+    background-color: #fff;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+        height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+caption,th {
+    text-align: left
+}
+
+fieldset,img {
+    border: 0
+}
+
+li {
+    list-style: none
+}
+
+ins {
+    text-decoration: none
+}
+
+del {
+    text-decoration: line-through
+}
+
+input,button,textarea,select,optgroup,option {
+    font-family: "Microsoft YaHei","å¾®è½¯é›…é»‘",SimSun,"å®‹ä½“";
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    outline: 0
+}
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+    -webkit-appearance: none!important;
+    margin: 0
+}
+
+button {
+    -webkit-appearance: none;
+    border: 0;
+    background: 0 0
+}
+
+a {
+    -webkit-touch-callout: none;
+    text-decoration: none
+}
+
+:focus {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent
+}
+
+em,i {
+    font-style: normal
+}
+
+::-webkit-input-placeholder {
+    color: #e3e3e3;
+    text-indent: 5px;
+    font-size: 14px
+}
+
+.pull-right {
+    float: right
+}
+
+.pull-left {
+    float: left
+}
+
+.hidden {
+    display: none!important
+}
+
+.ovh {
+    overflow: hidden
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both
+}
+
+.clearfix {
+    zoom:1}
+
+.clearit {
+    clear: both;
+    height: 0;
+    font-size: 0;
+    overflow: hidden
+}
