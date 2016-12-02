@@ -11,6 +11,9 @@
     <meta name="x5-page-mode" content="app">
 	<link rel="stylesheet" href="static/css/basic.css">
 	<link rel="stylesheet" href="static/css/demo.css">
+	<link rel="stylesheet" type="text/css" href="static/js/uploadify.css">
+	<script src="static/js/jquery-1.10.2.min.js"></script>
+	<script src="static/js/jquery.uploadify.min.js"></script>
 </head>
 <body>
 	<div class="page-header">
@@ -22,14 +25,17 @@
 			<div class="input-file-left">
 				上传身份证（正面）
 				<input type="file" enctype="multipart/form-data" class="input-file-ipt"/>
+				<input id="file_upload1" name="file_upload" type="file" multiple="true">
 			</div>
 			<div class="input-file-mid">
 				上传身份证（背面）
 				<input type="file" enctype="multipart/form-data" class="input-file-ipt">
+				<input id="file_upload2" name="file_upload" type="file" multiple="true">
 			</div>
 			<div class="input-file-right">
 				上传银行卡（正面）
 				<input type="file" enctype="multipart/form-data" class="input-file-ipt">
+				<input id="file_upload3" name="file_upload" type="file" multiple="true">
 			</div>
 		</div>
 	</div>
@@ -38,3 +44,26 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript">
+		$(function() {
+			$('#file_upload1').uploadify({
+				'buttonText':'上传身份证（正面）',
+				'width':184,
+				'height':36,
+				'swf'      : 'uploadify.swf',
+				'uploader' : 'uploadify.php',
+				onUploadSuccess : function(file,data,response) {//上传完成时触发（每个文件触发一次）
+				console.log( 'id: ' + file.id
+				　　+ ' - 索引: ' + file.index
+				　　+ ' - 文件名: ' + file.name
+				　　+ ' - 文件大小: ' + file.size
+				　　+ ' - 类型: ' + file.type
+				　　+ ' - 创建日期: ' + file.creationdate
+				　　+ ' - 修改日期: ' + file.modificationdate
+				　　+ ' - 文件状态: ' + file.filestatus
+				　　+ ' - 服务器端消息: ' + data
+				　　+ ' - 是否上传成功: ' + response);
+				}
+			});
+		});
+	</script>
