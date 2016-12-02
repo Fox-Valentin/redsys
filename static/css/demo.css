@@ -152,3 +152,192 @@ body{
 		    color: #D60101;
 		    font-size: 18px;
 		}
+		@media screen and (max-width: 420px){
+				.info-left,.info-right{
+					float: initial;
+    				margin: 0 auto;
+				}
+		}
+
+		/*=============================personal_info*/
+		.per-info-left{
+			    float: left;
+		    width: 280px;
+		    margin-right: 90px;
+		}
+		.per-info-right{
+			    float: right;
+		    width: 280px;
+		}
+		.per-info-left li,.per-info-right li{
+			    height: 20px;
+		    line-height: 20px;
+		    font-size: 18px;
+		    color: #FFD21C;
+		    margin-bottom: 33px;
+		}
+		@media screen and (max-width: 420px){
+				.per-info-left,.per-info-right{
+					float: initial;
+    				margin: 0 auto;
+				}
+		}
+		/*===================================input-file*/
+		.input-file-title{
+			    font-size: 24px;
+			    color: #fff;
+			    text-align: center;
+			        margin-bottom: 76px;
+		}
+		.input-file-ipt{
+			        position: absolute;
+			    z-index: 9;
+			    top: 0;
+			    cursor: pointer;
+			    opacity: 0;
+			    left: 0;
+		}
+		.input-file-left,.input-file-mid,.input-file-right{
+			       position: relative;
+		    width: 184px;
+		    height: 36px;
+		    display: inline-block;
+		    font-size: 20px;
+		    color: #C40000;
+		    background-color: #fff;
+		    cursor: pointer;
+		}
+		.input-file-mid{
+			    margin-left: 116px;
+    			margin-right: 116px;
+		}
+		@media screen and (max-width: 420px){
+				.input-file-left,.input-file-mid,.input-file-right{
+		    		display: block;
+    				margin: 0 auto;
+				}
+			.input-file-mid{
+				    margin-top:50px;
+				    margin-bottom:50px;
+			}
+			.input-file-right{
+				    margin-bottom:50px;
+
+			}
+		}
+		/*===============show-file*/
+		.show-file-left,.show-file-mid,.show-file-right{
+			       position: relative;
+		    width: 184px;
+		    height: 118px;
+		    line-height: 118px;
+		    display: inline-block;
+		    font-size: 20px;
+		    color: #C40000;
+		    background-color: #fff;
+		    cursor: pointer;
+		}
+		.show-file-mid{
+			    margin-left: 116px;
+    			margin-right: 116px;
+		}
+		@media screen and (max-width: 420px){
+				.show-file-left,.show-file-mid,.show-file-right{
+		    		display: block;
+    				margin: 0 auto;
+				}
+			.show-file-mid{
+				    margin-top:50px;
+				    margin-bottom:50px;
+			}
+			.show-file-right{
+				    margin-bottom:50px;
+
+			}
+		}
+
+		/*===============================change-pwd*/
+		.input-file-wrap{
+			    text-align: center;
+			    color: #fff;
+			    font-size: 18px;
+			    margin-bottom: 10px;
+			    width: 540px;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.input-file-wrap input{
+			        height: 32px;
+    		width: 305px;
+    		    margin-left: -82px;
+		}
+		.input-file-wrap span{
+			   float: left;
+			   text-align: right;
+			   width:100px;
+			   height: 36px;
+    		line-height: 36px;
+		}
+		.input-file-wrap button{
+			    color: #FEE47F;
+    			font-size: 20px;
+    			background-image: url(../../static/img/change_btn.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			    width: 150px;
+			    height: 34px;
+			    line-height: 34px;
+			    margin-top: 26px;
+		}
+		@media screen and (max-width: 420px){
+			.input-file-wrap{
+				    width: initial;
+			}
+			.input-file-wrap input{
+				margin-left: 0px;
+			}
+		}
+		/*===========================login*/
+		.login-form-wrap{
+			width: 576px;
+    			height: 285px;
+	    		margin-left: auto;
+	    		margin-right: auto;
+    			background-image: url(../../static/img/reg_form_bg.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		.login-form-right{
+			    width: 224px;
+    float: right;
+    margin-top: 102px;
+    margin-right: 50px;
+		}
+		.login-form-item input{
+			    width: 160px;
+    			height: 24px;
+    			    border: 1px solid #EF0100;
+		}
+		.login-form-item{
+			color:#fdefa8;
+			margin-bottom: 12px;
+		}
+		.valid-code input{
+			    width: 92px;
+		}
+		.valid-code img{
+			    vertical-align: bottom;
+			        border: 1px solid #EDECFC;
+			            margin-left: 4px;
+		}
+		
+		.login-form-item button{
+			    width: 120px;
+    		height: 28px;
+    			background-image: url(../../static/img/login_btn.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		.tc{
+			text-align: center;
+		}
