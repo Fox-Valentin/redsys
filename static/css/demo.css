@@ -189,8 +189,8 @@ body{
 			    text-align: center;
 			        margin-bottom: 76px;
 		}
-		.input-file-ipt{
-			        position: absolute;
+		.input-file-ipt,.uploadifive-button{
+			        position: absolute!important;
 			    z-index: 9;
 			    top: 0;
 			    cursor: pointer;
@@ -225,6 +225,7 @@ body{
 
 			}
 		}
+
 		/*===============show-file*/
 		.show-file-left,.show-file-mid,.show-file-right{
 			       position: relative;
